@@ -2,20 +2,111 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-
+    <style>
+        #container {
+            display: flex;
+            flex-flow: row;
+        }
+        ul li {
+            background-color: white;
+        }
+        #index ol li {
+            background-color: white;
+        }
+        p {
+            background-color: green;
+        }
+        body {
+            background-image: url(body_backgroundimg.jpg);
+            background-size: 100%;
+        }
+        #top {
+            display: flex;
+            flex-flow: column;
+        }
+        #top h1 {
+            text-align: center;
+        }
+        #top img {
+            align-self: center;
+        }
+        #index {
+            display: flex;
+            flex-flow: row;
+        }
+        #index ol {
+            display: flex;
+            flex-flow: row;
+        }
+        #index ol li {
+            margin-left: 30%;
+            margin-top: 5%;
+            
+        }
+        #resume {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+     
+        h2 {
+            text-align: center;
+            background-color: green;
+        }
+        h1 {
+            background-color: grey;
+        }
+  /*      #skillsDimensioner{
+            max-width: 40%;
+        }
+*/       #expand {
+            margin-left: 30%;
+            display: flex;
+            flex-flow: row;
+            width: 100%;
+            height: 200px;
+        }
+        #expand img {
+           align-self: center;
+           width: 100%;
+        }
+        
+        footer {
+            background-image: url(footer_background.webp);
+        }
+        table {
+            border-width: 10px;
+            border-style: groove;
+            border-color: rosybrown;
+        }
+        #trybe {
+            margin-top: 40px;
+            margin-left: 308px;
+        }
+     
+    </style>
     <title>Hugo's profile</title>
 </head>
+<header><div id="banner">
+    <img src="banner.jpg" width="100%" height="70px">
+</div></header>
 <body>
+
+    <div id="top">
     <h1>Hugo Joaquim De Moro Junior</h1>
     <img src="Hugo_Jr.jpg" id="profile_picture" alt="Hugo's profile picture" width="230px">
+    </div>
 
-<h2>Index</h2>
-
+    
+    <div id="index">
+        <h2>Index</h2>
 <ol>
     <li><a href="#resume">Resume;</a></li>
     <li><a href="#skills">Skills;</a></li>
     <li><a href="#links">Links</a></li>
 </ol>
+    </div>
 
 <h2 id="resume">1. Resume</h2>
 
@@ -42,4 +133,26 @@
 </ul>
 
 </body>
+<footer>
+    <div id="container">
+        <div id="trybe">
+            <table>
+                <tr>
+                    <td>
+                        <img src="trybe.png" alt="Trybe logo" width="60px" height="60px">
+                    </td>   
+                </tr>
+            </table>
+        </div>
+        <div id="expand">
+            <table>
+                <tr>
+                    <td>
+                        <img src="loading.png" alt="knowledge gauge">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</footer>
 </html>
