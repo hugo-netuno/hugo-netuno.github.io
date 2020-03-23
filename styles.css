@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-flow: row;
     align-items: center;
-    width: 40%;
+    width: 50%;
     margin: auto;
 }
 
@@ -41,7 +41,7 @@ body {
 #index h2 {
     color: white;
     font-size: 40px;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 #myPicture {
@@ -89,14 +89,15 @@ body {
     display: flex;
     flex-flow: column;
     background-color: #0fa36b;
-    padding: 30px;
+    padding: 40px;
     text-align: center;
-    margin-left: 18%;
+    margin: auto;
     border: 2px;
     border-color: white;
     border-style: solid;
     border-radius: 50%;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 #skills, #links {
