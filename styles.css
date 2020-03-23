@@ -1,0 +1,133 @@
+
+body {
+    background-image: url(body_backgroundimg.jpg);
+    background-size: 100%;
+}
+
+#myName {
+    width:50%;
+    margin: auto;
+    background-color: #0fa36b;
+    border: 5px;
+    border-style: ridge;
+    border-color: rosybrown;
+   
+}
+
+#myName h1 {
+    text-align: center;
+}
+
+#index {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+}
+
+#index ol li {
+    display: inline;
+    color: white;
+    background-color: #0fa36b;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+#index h2 {
+    color: white;
+    font-size: 40px;
+}
+
+#myPicture {
+    display: inline;
+}
+
+#myPicture img {
+    border: 5px;
+    border-style: ridge;
+    border-color: rosybrown;
+    padding: 10px;
+    background-color: #0fa36b;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+#resume {
+    background-color:  #0fa36b;
+    float: right;
+    margin-right: 10%;
+    margin-top: 5%;
+    color: white;
+    font-size: 20px;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+#bottom {
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    width: 50%;
+}
+
+.columns h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.columns {
+    display: flex;
+    flex-flow: column;
+    background-color: #0fa36b;
+    padding: 30px;
+    text-align: center;
+    margin-left: 18%;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+#skills {
+    color: white;
+}
+
+#links {
+    color: white;
+}
+#links a:hover {
+    background-color: yellowgreen;
+}
+#links a:visited, #index a:visited {
+    color: red;
+}
+
+table {
+    border-width: 10px;
+    border-style: groove;
+    border-color: rosybrown;
+}
+
+#trybe, #gauge {
+    margin: auto;    
+}
+
+
+#footer {
+    display: flex;
+    flex-flow: row;
+}
+
+footer {
+    background-image: url(footer_background.webp);
+}
