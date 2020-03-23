@@ -1,7 +1,7 @@
 
 body {
     background-image: url(body_backgroundimg.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
 
 #myName {
@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-flow: row;
     align-items: center;
-    width: 30%;
+    width: 40%;
     margin: auto;
 }
 
@@ -41,6 +41,7 @@ body {
 #index h2 {
     color: white;
     font-size: 40px;
+    margin-left: 10%;
 }
 
 #myPicture {
