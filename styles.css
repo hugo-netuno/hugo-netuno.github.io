@@ -98,14 +98,11 @@ body {
     margin-bottom: 50px;
 }
 
-#skills {
+#skills, #links {
     color: white;
 }
 
-#links {
-    color: white;
-}
-#links a:hover {
+#links a:hover, #index a:hover {
     background-color: yellowgreen;
 }
 #links a:visited, #index a:visited {
