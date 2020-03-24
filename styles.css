@@ -77,7 +77,7 @@ body {
     display: flex;
     flex-flow: row;
     margin: auto;
-    width: 50%;
+    width: 100%;
 }
 
 .columns h2 {
@@ -111,10 +111,12 @@ body {
     color: red;
 }
 
-table {
+table tr td img {
     border-width: 10px;
     border-style: groove;
     border-color: rosybrown;
+    padding: 0px;
+    margin: 0%;
 }
 
 #trybe, #gauge {
