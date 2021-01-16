@@ -1,134 +1,234 @@
-
 body {
-    background-image: url(body_backgroundimg.jpg);
-    background-size: cover;
+  background-image: url(body_backgroundimg.jpg);
+  background-size: cover;
 }
-
-#myName {
-    width:50%;
-    margin: auto;
-    background-color: #0fa36b;
-    border: 5px;
-    border-style: ridge;
-    border-color: rosybrown;
-   
+#banner img {
+  height: 70px;
+  width: 100%;
 }
-
-#myName h1 {
-    text-align: center;
+h1 {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #0fa36b;
+  border: 5px;
+  border-style: ridge;
+  border-color: rosybrown;
+  align-self: center;
 }
-
 #index {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    width: 50%;
-    margin: auto;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  width: 50%;
+  margin: auto;
 }
-
 #index ol li {
-    display: inline;
-    color: white;
-    background-color: #0fa36b;
-    border: 2px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 5px;
-    padding: 5px;
-    margin-left: 15px;
+  display: inline;
+  color: white;
+  background-color: #0fa36b;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 15px;
 }
-
 #index h2 {
-    color: white;
-    font-size: 40px;
-    margin-left: 20%;
+  color: white;
+  font-size: 40px;
+  margin-left: 20%;
 }
-
 #myPicture {
-    display: inline;
+  display: inline;
 }
-
 #myPicture img {
-    border: 5px;
-    border-style: ridge;
-    border-color: rosybrown;
-    padding: 10px;
-    background-color: #0fa36b;
-    margin-left: 5%;
-    margin-top: 4%;
+  border: 5px;
+  border-style: ridge;
+  border-color: rosybrown;
+  padding: 10px;
+  background-color: #0fa36b;
+  margin-left: 5%;
+  margin-top: 4%;
 }
-
 #resume {
-    background-color:  #0fa36b;
-    float: right;
-    margin-right: 10%;
+  background-color: #0fa36b;
+  float: right;
+  margin-right: 10%;
+  margin-top: 5%;
+  color: white;
+  font-size: 20px;
+  border: 2px;
+  border-color: white;
+  border-style: solid;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+#bottom {
+  display: flex;
+  flex-flow: row;
+  margin: auto;
+  width: 100%;
+}
+.columns h2 {
+  font-size: 40px;
+  color: white;
+}
+.columns {
+  width: 150px;
+  display: flex;
+  flex-flow: column;
+  background-color: #0fa36b;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  border: 2px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+#skills,
+#links {
+  color: white;
+}
+#links a:hover,
+#index a:hover {
+  background-color: yellowgreen;
+}
+#links a:visited,
+#index a:visited {
+  color: red;
+}
+table tr td img {
+  border-width: 10px;
+  border-style: groove;
+  border-color: rosybrown;
+  padding: 0px;
+  margin: 0%;
+}
+#trybe,
+#gauge {
+  margin: auto;
+}
+#footer {
+  display: flex;
+  flex-flow: row;
+  background-image: url(footer_background.webp);
+}
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    border: 0;
+  }
+  #container {
+    margin: 0;
+    width: 360;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+  #myName {
+    /* padding: 20px 0 20px 0; */
     margin-top: 5%;
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    text-align: center;
+    font-size: x-large;
+    /* margin: 20px 0 20px 0; */
+  }
+  #index {
+    font-size: small;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    /* width: 360px; */
+  }
+  #index h2 {
+    text-align: center;
+    margin: 5% 0 5% 0;
+  }
+  #index ol {
+    justify-content: center;
+    padding: 0;
+    width: 200px;
+    margin-bottom: 10%;
+  }
+  #index ol li {
+    /* padding: 0; */
+    margin-left: 5%;
+  }
+  #myPicture {
+    display: flex;
+    justify-content: center;
+  }
+  #myPicture img {
+    margin: 0;
+  }
+  #resume {
+    width: 210px;
+    align-self: center;
+    background-color: #0fa36b;
+    float: none;
     color: white;
     font-size: 20px;
     border: 2px;
     border-color: white;
     border-style: solid;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px;
-}
-
-#bottom {
-    display: flex;
-    flex-flow: row;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10% 0;
+  }
+  h2 {
+    text-align: center;
+  }
+  #resume p {
+    text-align: center;
+    width: 200px;
     margin: auto;
-    width: 100%;
-}
-
-.columns h2 {
-    font-size: 40px;
-    color: white;
-}
-
-.columns {
+  }
+  #bottom {
     display: flex;
     flex-flow: column;
-    background-color: #0fa36b;
-    padding: 40px;
-    text-align: center;
-    margin: auto;
-    border: 2px;
-    border-color: white;
-    border-style: solid;
-    border-radius: 50%;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-#skills, #links {
-    color: white;
-}
-
-#links a:hover, #index a:hover {
-    background-color: yellowgreen;
-}
-#links a:visited, #index a:visited {
-    color: red;
-}
-
-table tr td img {
-    border-width: 10px;
-    border-style: groove;
-    border-color: rosybrown;
-    padding: 0px;
-    margin: 0%;
-}
-
-#trybe, #gauge {
-    margin: auto;    
-}
-
-
-#footer {
+    margin: 0;
+    align-self: center;
+    /* justify-content: center; */
+    width: 360px;
+  }
+  #portalDiv {
     display: flex;
-    flex-flow: row;
-}
-
-footer {
-    background-image: url(footer_background.webp);
+    justify-content: center;
+  }
+  #portal {
+    width: 240px;
+  }
+  .columns {
+    margin: 0;
+    width: 50%;
+    align-self: center;
+    padding: 15px;
+  }
+  ul li {
+    text-align: left;
+  }
+  #footer {
+    margin: 10% 0 0 0;
+    border: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  #trybe img {
+    width: 30px;
+    margin: 0%;
+  }
+  #gauge img {
+    width: 150px;
+  }
 }
