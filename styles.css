@@ -84,7 +84,7 @@ h1 {
   flex-flow: column;
   background-color: #0fa36b;
   padding: 20px;
-  text-align: center;
+  text-align: left;
   margin: auto;
   border: 2px;
   border-color: white;
@@ -114,11 +114,17 @@ table tr td img {
 }
 #gauge {
   margin: auto;
+  align-self: center;
+}
+#trybe {
+  margin: auto;
+  align-self: center;
 }
 #footer {
   display: flex;
   flex-flow: row;
   background-image: url(footer_background.webp);
+  justify-content: center;
 }
 @media screen and (max-width: 768px) {
   body {
@@ -199,9 +205,11 @@ table tr td img {
     margin: 0;
     align-self: center;
     /* justify-content: center; */
-    width: 360px;
+    width: fit-content;
   }
   #portalDiv {
+    margin: auto;
+    width: fit-content;
     display: flex;
     justify-content: center;
   }
