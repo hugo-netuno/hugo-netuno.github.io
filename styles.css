@@ -138,6 +138,9 @@ table tr td img {
   margin: auto;
   align-self: center;
 }
+#trybe img {
+  width: 50px;
+}
 #footer {
   display: flex;
   flex-flow: row;
@@ -285,23 +288,9 @@ table tr td img {
     display: flex;
     flex-flow: column;
   }
-
   #resume {
-    /* background-color: #0fa36b; */
-    /* float: right; */
-    /* margin-right: 10%; */
-    
     margin: auto;
     margin-top: 5%;
-    /* margin-right: 5%; */
-    color: white;
-    font-size: 20px;
-    border: 2px;
-    border-color: white;
-    border-style: solid;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
   }
   #portalDiv {
     display: flex;
@@ -310,5 +299,8 @@ table tr td img {
   }
   #portal {
     width: 160px;
+  }
+  #trybe img {
+    width: 50px;
   }
 }
