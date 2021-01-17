@@ -259,6 +259,10 @@ table tr td img {
   #gauge img {
     width: 150px;
   }
+  #screenControl {
+    display: flex;
+    flex-flow: column;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1319px) {
   #index {
