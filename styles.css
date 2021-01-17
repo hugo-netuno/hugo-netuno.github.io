@@ -25,6 +25,7 @@ h1 {
   align-items: center;
   width: 50%;
   margin: auto;
+  /* margin-bottom: 5%; */
 }
 #index ol li {
   display: inline;
@@ -42,8 +43,12 @@ h1 {
   font-size: 40px;
   margin-left: 20%;
 }
+#screenControl {
+  display: flex;
+  flex-flow: row;
+}
 #myPicture {
-  display: inline;
+  margin: auto;
 }
 #myPicture img {
   border: 5px;
@@ -51,14 +56,11 @@ h1 {
   border-color: rosybrown;
   padding: 10px;
   background-color: #0fa36b;
-  margin-left: 5%;
-  margin-top: 4%;
 }
 #resume {
   background-color: #0fa36b;
-  float: right;
-  margin-right: 10%;
-  margin-top: 5%;
+  width: 53%;
+  margin: auto;
   color: white;
   font-size: 20px;
   border: 2px;
@@ -78,8 +80,24 @@ h1 {
   font-size: 40px;
   color: white;
 }
-.columns {
+#columnSkills {
   width: 150px;
+  display: flex;
+  flex-flow: column;
+  background-color: #0fa36b;
+  padding: 20px;
+  text-align: left;
+  margin: auto;
+  border: 2px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+#columnLinks {
+  width: 150px;
+  height: fit-content;
   display: flex;
   flex-flow: column;
   background-color: #0fa36b;
@@ -139,7 +157,6 @@ table tr td img {
     justify-content: center;
   }
   #myName {
-    /* padding: 20px 0 20px 0; */
     margin-top: 5%;
     display: flex;
     justify-content: center;
@@ -154,7 +171,6 @@ table tr td img {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    /* width: 360px; */
   }
   #index h2 {
     text-align: center;
@@ -164,7 +180,7 @@ table tr td img {
     justify-content: center;
     padding: 0;
     width: 200px;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
   }
   #index ol li {
     /* padding: 0; */
@@ -189,13 +205,15 @@ table tr td img {
     border-style: solid;
     padding: 10px;
     border-radius: 10px;
-    margin: 10% 0;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
   h2 {
     text-align: center;
   }
   #resume p {
-    text-align: center;
+    text-align: left;
     width: 200px;
     margin: auto;
   }
@@ -222,6 +240,9 @@ table tr td img {
     align-self: center;
     padding: 15px;
   }
+  ul {
+    padding: 10px;
+  }
   ul li {
     text-align: left;
   }
@@ -237,5 +258,53 @@ table tr td img {
   }
   #gauge img {
     width: 150px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1319px) {
+  #index {
+    margin: auto;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+  }
+  #index h2 {
+    text-align: center;
+    margin: 5% 0 5% 0;
+  }
+  #myPicture {
+    margin: auto;
+  }
+  #myPicture img {
+    margin: auto;
+  }
+  #screenControl {
+    display: flex;
+    flex-flow: column;
+  }
+
+  #resume {
+    /* background-color: #0fa36b; */
+    /* float: right; */
+    /* margin-right: 10%; */
+    
+    margin: auto;
+    margin-top: 5%;
+    /* margin-right: 5%; */
+    color: white;
+    font-size: 20px;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+  }
+  #portalDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #portal {
+    width: 160px;
   }
 }
