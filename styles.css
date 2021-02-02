@@ -19,6 +19,19 @@ h1 {
   border-color: rosybrown;
   align-self: center;
 }
+h3 {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #0fa36b;
+  border: 5px;
+  border-style: ridge;
+  border-color: rosybrown;
+  align-self: center;
+}
 #index {
   display: flex;
   flex-flow: row;
@@ -68,7 +81,46 @@ h1 {
   border-style: solid;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 15px;
   border-radius: 10px;
+}
+#titulo-e-botoes {
+  display: flex;
+  flex-flow: row;
+}
+#titulo1-ingles {
+  display: unset;
+  color: white;
+}
+#titulo1-portugues {
+  display: none;
+  color: white;
+}
+#titulo2-ingles {
+  display: unset;
+  color: white;
+}
+#titulo2-portugues {
+  display: none;
+  color: white;
+}
+#para-portugues {
+  display: unset;
+  margin-right: 0;
+  margin-left: auto;
+  height: min-content;
+}
+#para-ingles {
+  display: none;
+  margin-right: 0;
+  margin-left: auto;
+  height: min-content;
+}
+#ingles {
+  display: unset;
+}
+#portugues {
+  display: none;
 }
 #bottom {
   display: flex;
@@ -77,7 +129,7 @@ h1 {
   width: 100%;
 }
 .columns h2 {
-  font-size: 40px;
+  /* font-size: 40px; */
   color: white;
 }
 #columnSkills {

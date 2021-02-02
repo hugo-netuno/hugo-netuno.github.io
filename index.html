@@ -15,6 +15,7 @@
     <div id="container">
     <div id="myName">
         <h1>Hugo Joaquim De Moro Junior</h1>
+        <h3><a href="mailto:hugo.urano@gmail.com">e-mail: hugo.urano@gmail.com</a></h3>
     </div>
     <div id="index">
         <h2>Index:</h2>
@@ -26,12 +27,21 @@
     </div>
     <div id="screenControl">
         <div id="myPicture">
-            <img src="Hugo_Jr.jpg" id="profile_picture" alt="Hugo's profile picture" width="230px">
+            <img src="Hugo-Jr.jpg" id="profile_picture" alt="Hugo's profile picture" width="230px">
         </div>
         <div id="resume">
-            <h2>1. Resume</h2>
-
-            <p>Born in 1988 December 1'st at Belo Horizonte, a beautiful brazilian city known for it's delicious foods,<br>
+            <div id="titulo-e-botoes">
+                <h2 id="titulo1-ingles">1. Resume</h2>
+                <h2 id="titulo1-portugues">1. Resumo</h2>
+                <button id="para-portugues" onclick="paraPortugues()">Traduzir para português</button>
+                <button id="para-ingles" onclick="paraIngles()">Translate to english</button>
+            </div>
+            <p id="portugues">Nascido em 1º de dezembro de 1988 em Belo Horizonte, uma bela cidade brasileira conhecida por suas comidas deliciosas, <br>
+            Estou prestes a me tornar um desenvolvedor de software profissional. <br>
+            Atualmente estudando na Trybe, estou aprendendo muito com a melhor equipe que alguém pode desejar. <br>
+            Sou um homem de ciência e de filosofia e ambiciono o topo, o céu é o limite!
+            </p>
+            <p id="ingles">Born in 1988 December 1'st at Belo Horizonte, a beautiful brazilian city known for it's delicious foods,<br>
             I'm on my way of becoming a pro software developer.<br>
             Currently studying at Trybe, I'm learning a lot with the best team someone can wish.<br>
             I am a man of science and philosofy and I aim for the top, the sky is the limit!
@@ -40,7 +50,8 @@
     </div>
     <div id="bottom">
         <div id="columnSkills">
-            <h2>2. Skills</h2>
+            <h2 id="titulo2-ingles">2. Skills</h2>
+            <h2 id="titulo2-portugues">2. Habilidades</h2>
                 <div id="skills">
                     <ul>
                         <li>Shell scripting</li>
@@ -62,7 +73,7 @@
                 </div>
         </div>
         <div id="portalDiv"><img id="portal" src="spinner.gif" alt=""></div>
-        <div id="columnLinks">
+        <div id="columnLinks" class="columns">
             <h2>3. Links</h2>
                 <div id="links">
                     <details>
@@ -98,5 +109,27 @@
     </div>
 </footer>
 </div>
+<script>
+    function paraPortugues(){
+        document.getElementById("para-portugues").style.display = "none";
+        document.getElementById("ingles").style.display = "none";
+        document.getElementById("para-ingles").style.display = "unset";
+        document.getElementById("portugues").style.display = "unset";
+        document.getElementById("titulo1-ingles").style.display = "none";
+        document.getElementById("titulo1-portugues").style.display = "unset";
+        document.getElementById("titulo2-ingles").style.display = "none";
+        document.getElementById("titulo2-portugues").style.display = "unset";
+    }
+    function paraIngles(){
+        document.getElementById("para-ingles").style.display = "none";
+        document.getElementById("portugues").style.display = "none";
+        document.getElementById("para-portugues").style.display = "unset";
+        document.getElementById("ingles").style.display = "unset";
+        document.getElementById("titulo1-portugues").style.display = "none";
+        document.getElementById("titulo1-ingles").style.display = "unset";
+        document.getElementById("titulo2-portugues").style.display = "none";
+        document.getElementById("titulo2-ingles").style.display = "unset";
+    }
+</script>
 </body>
 </html>
