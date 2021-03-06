@@ -204,6 +204,7 @@ table tr td img {
     margin: 0;
     border: 0;
   }
+
   #container {
     margin: 0;
     width: 360;
@@ -214,6 +215,7 @@ table tr td img {
   #myName {
     margin-top: 5%;
     display: flex;
+    flex-flow: column;
     justify-content: center;
   }
   h1 {
